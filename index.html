@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome Books</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- nav-bar -->
+    <header>
+      <nav class="nav">
+        <div>
+          <a href="#">Awesome Book</a>
+        </div>
+        <div>
+          <a id="listBtn" class="nav-border" href="#List">List</a>
+          <a id="AddNewBtn" class="nav-border" href="#Add-new">Add new</a>
+          <a id="contBtn" href="#Contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <!-- nav-bar end -->
+
+    <main>
+      <section class="dt" id="date">
+        <p class="date"></p>
+      </section>
+      <section id="book-section">
+        <h2>All awesome books</h2>
+        <div id="book-list">
+          <div class="book">
+            <h5 class="title"></h5>
+            <button type="button">Remove</button>
+          </div>
+        </div>
+      </section>
+      <section id="form-section">
+        <form>
+          <h2 class="main-title">Add a new book</h2>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            required
+            placeholder="Book Title"
+          /><br />
+          <input
+            type="text"
+            id="author"
+            name="author"
+            required
+            placeholder="Book Author"
+          /><br />
+          <button class="btn" type="submit" id="add-btn">Add Book</button>
+        </form>
+      </section>
+      <section id="contact-section">
+        <div class="contactUs">
+          <h2>Contact information</h2>
+          <p>
+            Do have any questions or you want to say "Hello"?<br />
+            you can reach out to us!
+          </p>
+          <ul>
+            <li>Our e-mail mail@mail.com</li>
+            <li>Our phone number: 0043586534422</li>
+            <li>our address: Streetname 22, 84503 City, country</li>
+          </ul>
+        </div>
+      </section>
+      <footer><h3>Copyright ...</h3></footer>
+    </main>
+
+    <script type="module" src="/index.js"></script>
+  </body>
+</html>
